@@ -41,6 +41,7 @@ model User {
   password String?
   role     String?    @default("user")
   Wishlist Wishlist[]
+  Settings Settings[]
 }
 
 model Customer_order {
@@ -83,4 +84,16 @@ model Wishlist {
   productId String
   user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId    String
+}
+
+model Settings {
+  id               String    @id @default(uuid())
+  logo             String
+  mainColor        String
+  secondaryColor   String
+  language         String    @default("en")
+  companyPhone     String
+  companyEmail     String
+  user             User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId           String
 }

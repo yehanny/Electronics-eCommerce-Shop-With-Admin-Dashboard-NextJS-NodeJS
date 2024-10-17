@@ -80,3 +80,14 @@ interface WishListItem {
   productId: string;
   product: Product;
 }
+
+interface Settings {
+  id: string;
+  logo: string;
+  mainColor: string;
+  secondaryColor: string;
+  language: string;
+  companyPhone: string;
+  companyEmail: string;
+  userId: string;
+}
