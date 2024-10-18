@@ -114,6 +114,25 @@ const DashboardSettingsPage = ({ params: { userId } }: DashboardSettingsPageProp
           </label>
         </div>
 
+        {/* Theme */}
+        <div>
+          <label className="form-control w-full max-w-xs">
+            <div className="label">
+              <span className="label-text">Theme</span>
+            </div>
+            <select
+              className="select select-bordered"
+              value={settings?.theme}
+              onChange={(e) => {
+                setSettings({ ...settings!, theme: e.target.value });
+              }}
+            >
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+          </label>
+        </div>
+
         {/* Company phone */}
         <div>
           <label className="form-control w-full max-w-xs">

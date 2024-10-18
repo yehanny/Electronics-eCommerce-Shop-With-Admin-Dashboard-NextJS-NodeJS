@@ -8,7 +8,7 @@ CREATE TABLE `Settings` (
     `companyPhone` VARCHAR(191) NOT NULL, 
     `companyEmail` VARCHAR(191) NOT NULL,
     `userId` VARCHAR(191) NOT NULL,
-    `theme` VARCHAR(50) NOT NULL DEFAULT 'light',
+    `theme` VARCHAR(191) NOT NULL DEFAULT 'light',
     
 
     PRIMARY KEY (`id`)

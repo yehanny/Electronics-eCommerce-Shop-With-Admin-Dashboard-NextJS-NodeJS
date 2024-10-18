@@ -90,4 +90,5 @@ interface Settings {
   companyPhone: string;
   companyEmail: string;
   userId: string;
+  theme: string;
 }
