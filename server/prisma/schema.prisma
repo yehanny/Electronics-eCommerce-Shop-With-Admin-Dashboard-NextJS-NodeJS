@@ -96,4 +96,5 @@ model Settings {
   companyEmail     String
   user             User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId           String
+  theme            String    @default("light")
 }
